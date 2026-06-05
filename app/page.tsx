@@ -50,7 +50,7 @@ export default function Home() {
               style={{
                 backgroundImage: "url(/philippe_playing_go_1.png)",
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundPosition: "top center",
               }}
               aria-hidden="true"
             />
