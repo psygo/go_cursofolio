@@ -17,9 +17,8 @@ export default function Home() {
                 Uma coletânea de cursos de Go para todos os níveis, por um
                 jogador de nível <em>dan</em> com mais de 14 anos de experiência
                 e mais de 6 anos ensinando Go. Se você quer aprender Go de forma
-                rápida e eficiente, com foco em práticas recomendadas e exemplos
-                do mundo real, confira meus cursos e comece sua jornada hoje
-                mesmo!
+                rápida e eficiente, com o foco em técnicas e princípios, confira
+                meus cursos e comece sua jornada hoje mesmo!
               </p>
             </div>
           </div>

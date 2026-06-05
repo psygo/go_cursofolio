@@ -16,7 +16,7 @@ function Course({
     <div className="flex flex-col gap-6">
       <div className="flex items-center gap-4">
         <div className="flex-1 border-t border-slate-200" />
-        <span className="rounded-full bg-white px-4 py-1 text-sm font-semibold text-slate-950 shadow-sm">
+        <span className="rounded-full bg-white px-4 py-1 text-sm md:text-lg font-semibold text-slate-950 shadow-sm">
           {index}
         </span>
         <div className="flex-1 border-t border-slate-200" />
@@ -54,7 +54,7 @@ export default function Courses() {
       <main className="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-6 md:py-8">
         <Nav />
 
-        <section className="mx-auto max-w-8xl mt-14 flex flex-col gap-8 lg:gap-40 xl:gap-48 md:flex-row md:items-center">
+        <section className="mx-auto max-w-8xl mt-14 flex flex-col gap-8 md:px-10">
           <Course
             index={1}
             title="As Regras do Go"
