@@ -27,10 +27,10 @@ export default function Home() {
           </div>
         </nav>
 
-        <section className="mt-16 grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:items-center">
+        <section className="mt-16 grid gap-8 md:grid-cols-[1.3fr_1fr] lg:items-center">
           <div className="space-y-8">
             <div className="space-y-6">
-              <h1 className="text-5xl font-bold tracking-tight text-slate-950 sm:text-6xl">
+              <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-slate-950">
                 Descomplicando o Go.
               </h1>
               <p className="max-w-xl text-lg leading-8 text-slate-600">
@@ -46,7 +46,7 @@ export default function Home() {
 
           <div className="relative overflow-hidden rounded-4xl">
             <div
-              className="aspect-4/5 w-full overflow-hidden rounded-[28px] bg-slate-200"
+              className="aspect-4/5 max-h-100 overflow-hidden rounded-[28px] bg-slate-200"
               style={{
                 backgroundImage: "url(/philippe_playing_go_1.png)",
                 backgroundSize: "cover",
