@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-slate-950 font-sans">
-      <main className="mx-auto flex min-h-screen max-w-7xl flex-col items-center px-6 py-12">
+      <main className="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-12">
         <nav className="w-full">
           <div className="mx-auto flex w-full max-w-xl justify-center">
             <ul className="flex flex-wrap items-center justify-center gap-3 rounded-full bg-slate-100 px-4 py-3 shadow-lg ring-1 ring-slate-200">
@@ -27,11 +27,36 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className="mt-20 w-full text-center">
-          <p className="text-sm uppercase tracking-[0.32em] text-slate-500">
-            Top menu implemented
-          </p>
-        </div>
+        <section className="mt-16 grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:items-center">
+          <div className="space-y-8">
+            <div className="space-y-6">
+              <h1 className="text-5xl font-bold tracking-tight text-slate-950 sm:text-6xl">
+                Descomplicando o Go.
+              </h1>
+              <p className="max-w-xl text-lg leading-8 text-slate-600">
+                Uma coletânea de cursos de Go para todos os níveis, por um
+                jogador de nível <em>dan</em> com mais de 14 anos de experiência
+                e mais de 6 anos ensinando Go. Se você quer aprender Go de
+                forma rápida e eficiente, com foco em práticas recomendadas e
+                exemplos do mundo real, confira meus cursos e comece sua jornada
+                hoje mesmo!
+              </p>
+            </div>
+          </div>
+
+          <div className="relative overflow-hidden rounded-4xl border border-slate-200 bg-slate-50 p-6 shadow-[0_30px_80px_-40px_rgba(15,23,42,0.15)]">
+            <div
+              className="aspect-4/5 w-full overflow-hidden rounded-[28px] bg-slate-200"
+              style={{
+                backgroundImage:
+                  "url(https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              aria-hidden="true"
+            />
+          </div>
+        </section>
       </main>
     </div>
   )
