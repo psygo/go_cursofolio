@@ -3,16 +3,16 @@ import Nav from "./components/nav"
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-slate-950 font-sans">
-      <main className="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-12">
+      <main className="mx-auto items-center flex min-h-screen max-w-9xl flex-col px-6 py-12">
         <Nav />
 
-        <section className="lg:items-center mx-auto max-w-6xl mt-16 grid gap-8 md:grid-cols-[1.3fr_1fr]">
-          <div className="space-y-8">
-            <div className="space-y-6">
+        <section className="mx-auto max-w-8xl mt-16 flex flex-col gap-8 lg:gap-40 xl:gap-48 md:flex-row md:items-center">
+          <div className="flex-1 min-w-0 space-y-8">
+            <div className="space-y-6 max-w-xl">
               <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-slate-950">
-                Descomplicando o Go.
+                Descomplicando o Go
               </h1>
-              <p className="max-w-xl text-lg leading-8 text-slate-600">
+              <p className="max-w-3xl text-lg leading-8 text-slate-600">
                 Uma coletânea de cursos de Go para todos os níveis, por um
                 jogador de nível <em>dan</em> com mais de 14 anos de experiência
                 e mais de 6 anos ensinando Go. Se você quer aprender Go de forma
@@ -23,9 +23,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-4xl">
+          <div className="relative flex-1 min-w-0 overflow-hidden rounded-4xl">
             <div
-              className="aspect-4/5 max-h-100 overflow-hidden rounded-[28px] bg-slate-200"
+              className="aspect-4/5 max-w-100 max-h-100 overflow-hidden rounded-[28px] bg-slate-200"
               style={{
                 backgroundImage: "url(/philippe_playing_go_1.png)",
                 backgroundSize: "cover",
