@@ -1,3 +1,4 @@
+import Footer from "./components/footer"
 import Nav from "./components/nav"
 
 export default function Home() {
@@ -36,6 +37,8 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </div>
   )
 }

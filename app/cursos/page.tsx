@@ -1,3 +1,4 @@
+import Footer from "../components/footer"
 import Nav from "../components/nav"
 
 function Course({
@@ -69,6 +70,8 @@ export default function Courses() {
           <div className="border-t border-slate-200 my-1" />
         </section>
       </main>
+
+      <Footer />
     </div>
   )
 }
