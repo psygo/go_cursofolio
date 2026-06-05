@@ -43,8 +43,6 @@ function Course({
           />
         </div>
       </div>
-
-      <div className="border-t border-slate-200 my-2" />
     </div>
   )
 }
@@ -58,10 +56,17 @@ export default function Courses() {
         <section className="mx-auto max-w-8xl mt-14 flex flex-col gap-8 lg:gap-40 xl:gap-48 md:flex-row md:items-center">
           <Course
             index={1}
+            title="As Regras do Go"
+            description="As regras. Descomplicadas."
+            url="https://www.youtube.com/embed/MMR_3EZTTFw?list=PLMYMhzMuvitQAPXYv--bdqRJIJGwGMdMe"
+          />
+          <Course
+            index={2}
             title="Curso de Go para Iniciantes"
             description="Um curso do zero que aborda as regras, fundamentos de abertura, táticas e a história do Go."
             url="https://www.youtube.com/embed/nIs6yKuL8ZE?list=PLMYMhzMuvitQAPXYv--bdqRJIJGwGMdMe"
           />
+          <div className="border-t border-slate-200 my-1" />
         </section>
       </main>
     </div>
