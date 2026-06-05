@@ -20,7 +20,7 @@ export default function Courses() {
               </div>
             </div>
 
-            <div className="max-w-150 overflow-hidden rounded-[28px] border border-slate-200 bg-slate-100 shadow-[0_30px_80px_-40px_rgba(15,23,42,0.15)]">
+            <div className="max-w-150 overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-[0_30px_80px_-40px_rgba(15,23,42,0.15)]">
               <div className="aspect-video w-full overflow-hidden bg-black">
                 <iframe
                   className="h-full w-full"

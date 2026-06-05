@@ -1,6 +1,19 @@
+"use client"
+
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 export default function Nav() {
+  const pathname = usePathname() || "/"
+
+  const baseLinkClasses =
+    "rounded-full px-4 py-2 text-sm font-semibold transition"
+
+  const activeLinkClasses =
+    "bg-slate-950/5 text-slate-950 hover:bg-slate-200"
+  const inactiveLinkClasses =
+    "bg-transparent text-slate-700 hover:bg-slate-200"
+
   return (
     <nav className="w-full">
       <div className="mx-auto flex w-full max-w-xl justify-center">
@@ -8,7 +21,9 @@ export default function Nav() {
           <li>
             <Link
               href="/"
-              className="rounded-full bg-slate-950/5 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-slate-200"
+              className={`${baseLinkClasses} ${
+                pathname === "/" ? activeLinkClasses : inactiveLinkClasses
+              }`}
             >
               Sobre
             </Link>
@@ -16,7 +31,11 @@ export default function Nav() {
           <li>
             <Link
               href="/cursos"
-              className="rounded-full px-4 py-2 text-sm text-slate-700 transition hover:bg-slate-200"
+              className={`${baseLinkClasses} ${
+                pathname.startsWith("/cursos")
+                  ? activeLinkClasses
+                  : inactiveLinkClasses
+              }`}
             >
               Cursos
             </Link>
