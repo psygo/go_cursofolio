@@ -44,7 +44,7 @@ function Course({
         </div>
       </div>
 
-      <div className="border-t border-slate-200" />
+      <div className="border-t border-slate-200 my-2" />
     </div>
   )
 }
@@ -52,10 +52,10 @@ function Course({
 export default function Courses() {
   return (
     <div className="min-h-screen bg-white text-slate-950 font-sans">
-      <main className="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-12">
+      <main className="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-6 md:py-8">
         <Nav />
 
-        <section className="mx-auto max-w-8xl mt-16 flex flex-col gap-8 lg:gap-40 xl:gap-48 md:flex-row md:items-center">
+        <section className="mx-auto max-w-8xl mt-14 flex flex-col gap-8 lg:gap-40 xl:gap-48 md:flex-row md:items-center">
           <Course
             index={1}
             title="Curso de Go para Iniciantes"

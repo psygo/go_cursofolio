@@ -3,10 +3,10 @@ import Nav from "./components/nav"
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-slate-950 font-sans">
-      <main className="mx-auto items-center flex min-h-screen max-w-9xl flex-col px-6 py-12">
+      <main className="mx-auto items-center flex min-h-screen max-w-9xl flex-col px-6 py-6 md:py-8">
         <Nav />
 
-        <section className="mx-auto max-w-8xl mt-16 flex flex-col gap-8 lg:gap-40 xl:gap-48 md:flex-row md:items-center">
+        <section className="mx-auto max-w-8xl mt-14 flex flex-col gap-8 lg:gap-40 xl:gap-48 md:flex-row md:items-center">
           <div className="flex-1 min-w-0 space-y-8">
             <div className="space-y-6 max-w-xl">
               <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-slate-950">
