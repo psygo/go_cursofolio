@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
@@ -17,7 +18,16 @@ export default function Nav() {
   return (
     <nav className="w-full">
       <div className="mx-auto flex w-full max-w-xl justify-center">
-        <ul className="flex flex-wrap items-center justify-center gap-3 rounded-full bg-slate-100 px-4 py-3 shadow-lg ring-1 ring-slate-200">
+        <ul className="flex flex-wrap items-center justify-center gap-2 rounded-full bg-slate-100 px-4 py-3 shadow-lg ring-1 ring-slate-200">
+          <li>
+            <Image
+              src="/fanaro.io.svg"
+              alt="Philippe playing Go"
+              width={22}
+              height={22}
+              className="rounded-full mr-2 ml-1"
+            />
+          </li>
           <li>
             <Link
               href="/"
