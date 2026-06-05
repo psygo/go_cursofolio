@@ -15,6 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Cursos de Go de Philippe Fanaro",
   description: "Cursos de Go de Philippe Fanaro",
+  icons: [
+    {
+      rel: "icon",
+      url: "/favicon.png",
+    },
+  ],
 }
 
 export default function RootLayout({

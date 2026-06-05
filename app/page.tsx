@@ -36,20 +36,19 @@ export default function Home() {
               <p className="max-w-xl text-lg leading-8 text-slate-600">
                 Uma coletânea de cursos de Go para todos os níveis, por um
                 jogador de nível <em>dan</em> com mais de 14 anos de experiência
-                e mais de 6 anos ensinando Go. Se você quer aprender Go de
-                forma rápida e eficiente, com foco em práticas recomendadas e
-                exemplos do mundo real, confira meus cursos e comece sua jornada
-                hoje mesmo!
+                e mais de 6 anos ensinando Go. Se você quer aprender Go de forma
+                rápida e eficiente, com foco em práticas recomendadas e exemplos
+                do mundo real, confira meus cursos e comece sua jornada hoje
+                mesmo!
               </p>
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-4xl border border-slate-200 bg-slate-50 p-6 shadow-[0_30px_80px_-40px_rgba(15,23,42,0.15)]">
+          <div className="relative overflow-hidden rounded-4xl">
             <div
               className="aspect-4/5 w-full overflow-hidden rounded-[28px] bg-slate-200"
               style={{
-                backgroundImage:
-                  "url(https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80)",
+                backgroundImage: "url(/philippe_playing_go_1.png)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
