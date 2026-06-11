@@ -1,17 +1,14 @@
 import Footer from "../components/footer"
 import Nav from "../components/nav"
 
-function Course({
-  index,
-  title,
-  description,
-  url,
-}: {
+type Course = {
   index: number
   title: string
   description: string
   url: string
-}) {
+}
+
+function Course({ index, title, description, url }: Course) {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex items-center gap-4">
@@ -66,6 +63,12 @@ export default function Courses() {
             title="Curso de Go para Iniciantes"
             description="Um curso do zero que aborda as regras, fundamentos de abertura, táticas e a história do Go."
             url="https://www.youtube.com/embed/nIs6yKuL8ZE?list=PLMYMhzMuvitQAPXYv--bdqRJIJGwGMdMe"
+          />
+          <Course
+            index={3}
+            title="Abertura do Zero | Volume 1"
+            description="Um curso do zero que aborda os princípios básicos da abertura do Go, além de movimentos de canto, josekis básicos e algumas das aberturas mais famosas."
+            url="https://www.youtube.com/embed/7zpef07ei5U?list=PLLWr-AWriURE"
           />
           <div className="border-t border-slate-200 my-1" />
         </section>
